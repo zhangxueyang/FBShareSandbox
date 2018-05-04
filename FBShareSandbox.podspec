@@ -12,7 +12,7 @@ s.license      = "MIT"
 s.author             = { "cocoazxy" => "cocoazxy@gmail.com" }
 s.source       = { :git => "https://github.com/zhangxueyang/FBShareSandbox.git", :tag => "#{s.version}" }
 
-s.source_files  = "Classes", "FBObjcTool/Classes/**/*.{h,m}"
+s.source_files  = "Classes", "FBShareSandbox/Classes/**/*.{h,m}"
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
