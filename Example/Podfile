@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FBShareSandbox_Example' do
+  pod 'FBShareSandbox', :path => '../'
+
+  target 'FBShareSandbox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
