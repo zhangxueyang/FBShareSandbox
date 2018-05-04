@@ -19,11 +19,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'FBShareSandbox'
 ```
+##How To Use
+```
+#ifdef DEBUG
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[FBShareSandbox sharedSandbox] swipSandboxPage];
+        });
+#endif
+```
 
-## Author
-
-zhangxueyang, cocoazxy@gmail.com
-
-## License
-
-FBShareSandbox is available under the MIT license. See the LICENSE file for more info.
+![Image text](https://github.com/zhangxueyang/FBShareSandbox/blob/master/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-04-28%20at%2014.10.42.png)
+![Image text](https://github.com/zhangxueyang/FBShareSandbox/blob/master/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-04-28%20at%2014.11.04.png)

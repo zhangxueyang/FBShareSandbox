@@ -1,0 +1,6 @@
+framework module Pods_FBShareSandbox_Tests {
+  umbrella header "Pods-FBShareSandbox_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

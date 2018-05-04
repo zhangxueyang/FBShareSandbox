@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint FBShareSandbox.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
-  s.name             = 'FBShareSandbox'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FBShareSandbox.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.name         = "FBShareSandbox"
+s.version      = "0.1.0"
+s.summary      = "分享自己应用手机沙盒文件"
+s.description  = "一款小demo 在开发的时候 分享自己app 沙盒文件"
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.homepage     = "https://github.com/zhangxueyang/FBShareSandbox"
+s.license      = "MIT"
 
-  s.homepage         = 'https://github.com/zhangxueyang/FBShareSandbox'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhangxueyang' => 'cocoazxy@gmail.com' }
-  s.source           = { :git => 'https://github.com/zhangxueyang/FBShareSandbox.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.author             = { "cocoazxy" => "cocoazxy@gmail.com" }
+s.source       = { :git => "https://github.com/zhangxueyang/FBShareSandbox.git", :tag => "#{s.version}" }
 
-  s.ios.deployment_target = '8.0'
+s.source_files  = "Classes", "FBObjcTool/Classes/**/*.{h,m}"
 
-  s.source_files = 'FBShareSandbox/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FBShareSandbox' => ['FBShareSandbox/Assets/*.png']
-  # }
+s.platform     = :ios, '7.0'
+s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
+

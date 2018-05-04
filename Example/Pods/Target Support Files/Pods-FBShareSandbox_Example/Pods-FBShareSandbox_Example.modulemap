@@ -1,0 +1,6 @@
+framework module Pods_FBShareSandbox_Example {
+  umbrella header "Pods-FBShareSandbox_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

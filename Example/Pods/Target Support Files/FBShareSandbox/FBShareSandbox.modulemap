@@ -1,0 +1,6 @@
+framework module FBShareSandbox {
+  umbrella header "FBShareSandbox-umbrella.h"
+
+  export *
+  module * { export * }
+}
